@@ -3,7 +3,7 @@
 on:
   push:
     branches: [ main ]
-#   workflow_dispatch:   # ✅ Manual trigger only
+  workflow_dispatch:   # ✅ Manual trigger only
 
 
 # jobs:
@@ -39,10 +39,10 @@ on:
 
 name: Terraform Deploy
 
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: [ main ]
+#   workflow_dispatch:
 
 jobs:
   plan:
